@@ -8,7 +8,7 @@ int main() {
     char estado1; 
     char codigo1[4]; 
     char nome_cidade1[50]; 
-    int populacao1;           
+    unsigned long populacao1; 
     float area1;              
     float pib1_input;         
     int pontos_turisticos1;
@@ -22,7 +22,7 @@ int main() {
     char estado2;
     char codigo2[4];
     char nome_cidade2[50];
-    int populacao2;
+    unsigned long populacao2; 
     float area2;
     float pib2_input;
     int pontos_turisticos2;
@@ -50,14 +50,10 @@ int main() {
     scanf("%s", codigo1); 
 
     printf("Nome da Cidade: ");
-    //scanf("%s", nome_cidade1); 
-    /* Para sair conforme o exemplo que foi apresentado, 
-    tive que utilizar esse formato para o scanf para que 
-    ele aceitasse espaços e acentuação*/
     scanf(" %49[^\n]", nome_cidade1); 
 
     printf("População: "); 
-    scanf("%d", &populacao1); 
+    scanf("%lu", &populacao1); 
 
     printf("Área (em km²): "); 
     scanf("%f", &area1); 
@@ -83,19 +79,15 @@ int main() {
     scanf("%s", codigo2); 
 
     printf("Nome da Cidade: ");
-    //scanf("%s", nome_cidade2); 
-    /* Para sair conforme o exemplo que foi apresentado, 
-    tive que utilizar esse formato para o scanf para que 
-    ele aceitasse espaços e acentuação*/
     scanf(" %49[^\n]", nome_cidade2);
 
     printf("População: "); 
-    scanf("%d", &populacao2); 
+    scanf("%lu", &populacao2); 
 
     printf("Área (em km²): "); 
     scanf("%f", &area2);
 
-    printf("PIB (em bilhões de reais: "); 
+    printf("PIB: "); 
     scanf("%f", &pib2_input);
 
     printf("Número de Pontos Turísticos: "); 
@@ -118,12 +110,12 @@ int main() {
     // Cálculo do Super Poder utilizando o valor 1 (inteiro) na divisão
     super_poder1 = (float)populacao1 + area1 + pib1_total + 
                    (float)pontos_turisticos1 + pib_percapita1 + 
-                   (1 / densidade_populacional1);
+                   (1 / densidade_populacional1); // Sem .0f
 
 
     // --- Carta 2 ---
     // Cálculo total do PIB Total, usando o valor 1000000000 (inteiro)
-    float pib2_total = pib2_input * 1000000000.0f;
+    float pib2_total = pib2_input * 1000000000;
 
     // Cálculos utilizando a conversão explícita
     densidade_populacional2 = (float)populacao2 / area2;
@@ -132,7 +124,7 @@ int main() {
     // Cálculo do Super Poder utilizando o valor 1 (inteiro) na divisão
     super_poder2 = (float)populacao2 + area2 + pib2_total + 
                    (float)pontos_turisticos2 + pib_percapita2 + 
-                   (1 / densidade_populacional2);
+                   (1 / densidade_populacional2); // Sem .0f
     
     
     // 3. Comparação das Cartas
@@ -153,12 +145,12 @@ int main() {
     // 4. Exibição dos Resultados
     // ==========================
     printf("\n==========================\n");
-    printf("        RESULTADOS \n");
+    printf("       RESULTADOS \n");
     printf("==============================\n\n");
     
     printf("Após a comparação de Cartas:\n");
 
-    printf("População: %s (%d)\n", (vitoria_populacao ? "Carta 1 venceu" : "Carta 2 venceu"), vitoria_populacao);
+    printf("População: %s (%lu)\n", (vitoria_populacao ? "Carta 1 venceu" : "Carta 2 venceu"), populacao1 > populacao2); // <--- Ajuste para %lu
     printf("Área: %s (%d)\n", (vitoria_area ? "Carta 1 venceu" : "Carta 2 venceu"), vitoria_area);
     printf("PIB: %s (%d)\n", (vitoria_pib ? "Carta 1 venceu" : "Carta 2 venceu"), vitoria_pib);
     printf("Pontos Turísticos: %s (%d)\n", (vitoria_pontos ? "Carta 1 venceu" : "Carta 2 venceu"), vitoria_pontos);
