@@ -179,11 +179,9 @@ No diretório onde o arquivo main.c está localizado: gcc -o super_trunfo main.c
 Isso gera o executável: super_trunfo (Linux/macOS) / super_trunfo.exe (Windows)
 
 #### 8. Execução do Programa
-##### Linux/macOS
-./super_trunfo
+##### Linux/macOS:   ./super_trunfo
 
-##### Windows
-super_trunfo.exe
+##### Windows:   super_trunfo.exe
 
 #### 9. Exemplo de Uso do Menu
 Entrada do usuário:
