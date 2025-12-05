@@ -79,133 +79,138 @@ Boa sorte e divirta-se programando!
 
 Equipe de Ensino - MateCheck
 -----------------------------------------------------------------------------------------------------------------------------------
-Tema 3 - Super Trunfo em c: Nível Aventureiro
 
-Super Trunfo – Comparação de Cidades
+#### Super Trunfo em C – Comparação de Cartas de Países
+### TEMA 3 Nível Aventureiro 
 
-Este documento apresenta as instruções de compilação, execução e uso do programa desenvolvido em linguagem C para comparação de atributos entre duas cidades. O sistema utiliza um menu interativo para seleção de critérios.
+## Documentação do Projeto – Nível Intermediário
 
-1. Objetivo
+# 1. Descrição Geral
 
-Descrever a estrutura, funcionamento e instruções de operação do programa Super Trunfo – Comparação de Cidades, permitindo que qualquer usuário ou avaliador consiga compilar, executar e compreender o comportamento do software.
+Este projeto implementa uma versão simplificada do jogo Super Trunfo, permitindo comparar duas cartas de países com base em atributos definidos no próprio código. O programa utiliza um menu interativo baseado na estrutura switch e lógica de decisão com condicionais if-else para determinar o vencedor em cada comparação.
 
-2. Escopo
+O foco deste desafio é o desenvolvimento da lógica de comparação, da estrutura do menu e do fluxo interativo, conforme orientado no módulo.
 
-O programa realiza comparação direta entre duas cartas (cidades) por meio de cinco atributos predefinidos. O escopo abrange:
+# 2. Objetivo do Sistema
 
-Cálculo interno de densidade demográfica e PIB per capita.
+O programa permite ao jogador escolher qual atributo deseja utilizar para comparar duas cartas previamente cadastradas. Após a escolha, o sistema exibe:
 
-Apresentação de menu interativo para seleção de atributos.
+a. O atributo selecionado.
+b. Os nomes dos países.
+c. Os valores envolvidos.
+d. O resultado da disputa (qual carta venceu ou se houve empate).
 
-Determinação automática da carta vencedora com base no critério escolhido.
+# 3. Atributos Disponíveis para Comparação
 
-O programa não recebe entrada externa de dados das cartas, pois os valores estão definidos no código-fonte.
+Os atributos implementados são:
 
-3. Requisitos Técnicos
+- População (int)
+- Área (float)
+- PIB (float)
+- Pontos Turísticos (int)
+- Densidade Demográfica (float) – calculada internamente
+- Nome do país – exibido somente como informação, não é utilizado para desempate
 
-Para compilar e executar o código, é necessário:
+Regras de Comparação
 
-Compilador C compatível (GCC, Clang ou equivalente).
+1 - Para População, Área, PIB e Pontos Turísticos:
+vence a carta com o maior valor.
+2 - Para Densidade Demográfica:
+vence a carta com o menor valor.
+3 - Em qualquer atributo:
+valores iguais resultam em empate.
 
-Sistema operacional com terminal ou prompt de comando.
+# 4. Estrutura do Menu Interativo
 
-Acesso ao arquivo-fonte main.c.
+O programa exibe o menu abaixo para o usuário:
 
-4. Procedimento de Compilação
-
-No diretório onde o código-fonte está localizado, execute o comando:
-
-gcc -o super_trunfo main.c
-
-
-Esse procedimento gera o executável:
-
-super_trunfo (Linux/macOS)
-
-super_trunfo.exe (Windows)
-
-5. Procedimento de Execução
-5.1 Linux / macOS
-./super_trunfo
-
-5.2 Windows
-super_trunfo.exe
-
-6. Funcionamento do Programa
-
-Ao iniciar, o sistema apresenta um menu para seleção de atributos. Cada opção corresponde a um critério de comparação entre as duas cidades internas.
-
-6.1 Menu
 ******************** MENU PRINCIPAL **********************
 -- Escolha um atributo para comparação entre as cartas: --
 __________________________________________________________
-1. População (Maior Vence)
-2. Área (Maior Vence)
-3. PIB (Maior Vence)
-4. Pontos Turísticos (Maior Vence)
-5. Densidade Demográfica (Menor Vence)
+1. População (Maior vence)
+2. Área (Maior vence)
+3. PIB (Maior vence)
+4. Pontos Turísticos (Maior vence)
+5. Densidade Demográfica (Menor vence)
 Opção:
 
 
-O usuário deve digitar um valor inteiro entre 1 e 5.
+A lógica de controle utiliza:
 
-7. Especificação dos Atributos
-7.1 População
+a - switch para tratar a opção escolhida.
+b - if-else (incluindo estruturas aninhadas) para determinar:
 
-Compara o total de habitantes.
-Critério: maior valor vence.
+- O vencedor,
+- Os valores a serem exibidos,
+- Casos de empate.
 
-7.2 Área (km²)
+# 5. Requisitos Funcionais Atendidos
 
-Compara a área territorial total.
-Critério: maior valor vence.
+1 - Menu Interativo: Implementado com switch, com opções claras ao usuário.
+2 - Comparação de Atributos: Lógica por atributo, seguindo regras definidas.
+3 - Cálculo de Densidade Demográfica: Realizado automaticamente.
+4 - Exibição de Resultado: Inclui nome das cartas, valores e vencedor ou empate.
+5 - Utilização de Condicionais: Estruturas if-else e aninhamentos implementados.
 
-7.3 PIB (em bilhões)
+# 6. Requisitos Não Funcionais Atendidos
 
-Compara o valor do PIB informado.
-Critério: maior valor vence.
+1 - Usabilidade:
+O menu é simples e objetivo, com mensagens explicativas para cada etapa.
+2 - Performance:
+Resposta imediata; não depende de entrada externa além da escolha do atributo.
+3 - Manutenibilidade:
+Código organizado, comentado e com variáveis nomeadas de forma clara.
+A alteração dos valores das cartas é simples, bastando modificar as variáveis no início do arquivo.
+4 - Segurança:
+Há tratamento de opção inválida via default no switch.
 
-7.4 Pontos Turísticos
+# 7. Compilação do Programa
+Usando GCC
 
-Compara a quantidade cadastrada de pontos turísticos.
-Critério: maior valor vence.
+No diretório onde o arquivo main.c se encontra:
+gcc -o super_trunfo main.c
 
-7.5 Densidade Demográfica
+Isso gerará um executável:
+- super_trunfo (Linux/macOS)
+- super_trunfo.exe (Windows)
 
-Calculada como:
+# 8. Execução do Programa
+a - Linux/macOS
+./super_trunfo
 
-densidade = população / área
+b - Windows
+super_trunfo.exe
+
+# 9. Exemplo de Uso do Menu
+1 - Entrada do usuário:
+4
+2 - Saída esperada (exemplo genérico):
+O atributo escolhido foi: Pontos Turísticos
+
+DISPUTARAM: <Pais 1> versus <Pais 2>
+GANHADOR: Vitória de <Pais vencedor>
+
+1 - Pontos Turísticos de <Pais 1>: X
+2 - Pontos Turísticos de <Pais 2>: Y
 
 
-Critério: menor valor vence.
-O programa calcula essa métrica internamente para cada cidade.
+(A saída varia conforme os valores definidos no código.)
 
-8. Exemplo de Operação
-Entrada do usuário:
-3
-
-Saída gerada pelo sistema:
-O atributo escolhido foi: PIB
-
-DISPUTARAM: Sao_Paulo versus Rio_de_Janeiro
-GANHADOR: Vitória de Sao_Paulo!
-
-1 - PIB (em bilhões) de Sao_Paulo: 699.28
-2 - PIB (em bilhões) de Rio_de_Janeiro: 300.50
-
-9. Estrutura do Projeto
-/seu-repositorio
+# 10. Estrutura do Projeto
+/https://github.com/Cursos-TI/cadastro-cartas-thevazfiles
  ├── main.c
  └── README.md
 
-10. Manutenção e Expansão
+# 11. Como Alterar os Valores das Cartas
 
-O código pode ser expandido para:
+Os atributos das duas cartas estão definidos no início do código-fonte.
+Para alterá-los, modifique as variáveis correspondentes:
 
-Aceitar mais cartas.
+char nome_pais1[] = "...";
+int populacao1 = ...;
+float area1 = ...;
+float pib1_input = ...;
+int pontos_turisticos1 = ...;
 
-Ler dados externos (arquivo ou input do usuário).
-
-Implementar sistema completo de rodadas do jogo Super Trunfo.
-
-Criar modularização com funções separadas por responsabilidade.
+O programa continuará funcionando normalmente, independentemente dos valores escolhidos.
+---------------------------------------------------------------------------------------------------------------------------------
