@@ -189,22 +189,28 @@ super_trunfo.exe
 
 #### 9. Exemplo de Uso do Menu
 Entrada do usuário:
+
 4
 
 Saída esperada (exemplo genérico):
+
 O atributo escolhido foi: Pontos Turísticos
 
 DISPUTARAM: <Pais 1> versus <Pais 2>
+
 GANHADOR: Vitória de <Pais vencedor>
 
 1 - Pontos Turísticos de <Pais 1>: X
+
 2 - Pontos Turísticos de <Pais 2>: Y
 
 
 (A saída varia conforme os valores definidos no código.)
 
 #### 10. Estrutura do Projeto
+
 /https://github.com/Cursos-TI/cadastro-cartas-thevazfiles
+
  ├── main.c
  └── README.md
 
