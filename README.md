@@ -78,6 +78,7 @@ Ao concluir todos os níveis, você terá criado um sistema incial para o jogo S
 Boa sorte e divirta-se programando!
 
 Equipe de Ensino - MateCheck
+
 -----------------------------------------------------------------------------------------------------------------------------------
 
 #### Super Trunfo em C – Comparação de Cartas de Países
@@ -124,7 +125,7 @@ valores iguais resultam em empate.
 
 O programa exibe o menu abaixo para o usuário:
 
-******************** MENU PRINCIPAL **********************
+[ ******************** MENU PRINCIPAL ********************** ]
 -- Escolha um atributo para comparação entre as cartas: --
 __________________________________________________________
 1. População (Maior vence)
