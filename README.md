@@ -79,31 +79,37 @@ Boa sorte e divirta-se programando!
 
 Equipe de Ensino - MateCheck
 
------------------------------------------------------------------------------------------------------------------------------------
+---
+
 
 Super Trunfo em C – Comparação de Cartas de Países
-
-TEMA 3 Nível Aventureiro 
-
+TEMA 3 – Nível Aventureiro
 Documentação do Projeto – Nível Intermediário
-
 1. Descrição Geral
 
-Este projeto implementa uma versão simplificada do jogo Super Trunfo, permitindo comparar duas cartas de países com base em atributos definidos no próprio código. O programa utiliza um menu interativo baseado na estrutura switch e lógica de decisão com condicionais if-else para determinar o vencedor em cada comparação.
+Este projeto implementa uma versão simplificada do jogo Super Trunfo, permitindo comparar duas cartas de países com base em atributos previamente definidos no código.
 
-O foco deste desafio é o desenvolvimento da lógica de comparação, da estrutura do menu e do fluxo interativo, conforme orientado no módulo.
+O programa utiliza:
+
+Um menu interativo com switch
+
+Lógica de comparação usando condicionais if-else
+
+Regras específicas para cada atributo
+
+O foco deste desafio é aprender lógica condicional, montagem de menus e controle de fluxo.
 
 2. Objetivo do Sistema
 
-O programa permite ao jogador escolher qual atributo deseja utilizar para comparar duas cartas previamente cadastradas. Após a escolha, o sistema exibe:
+O jogador escolhe um atributo para comparar entre duas cartas. O sistema então exibe:
 
-O atributo selecionado.
+O atributo selecionado
 
-Os nomes dos países.
+Os nomes dos países
 
-Os valores envolvidos.
+Os valores utilizados
 
-O resultado da disputa (qual carta venceu ou se houve empate).
+O resultado da disputa (vitória ou empate)
 
 3. Atributos Disponíveis para Comparação
 
@@ -119,115 +125,104 @@ Pontos Turísticos (int)
 
 Densidade Demográfica (float) – calculada internamente
 
-Nome do país – exibido somente como informação, não é utilizado para desempate
+Nome do país (string) – exibido apenas como informação
 
 Regras de Comparação
 
-Para População, Área, PIB e Pontos Turísticos:
+População, Área, PIB, Pontos Turísticos:
+→ vence a carta com maior valor
 
-vence a carta com o maior valor.
+Densidade Demográfica:
+→ vence a carta com menor valor
 
-Para Densidade Demográfica:
-
-vence a carta com o menor valor.
-
-Em qualquer atributo:
-
-valores iguais resultam em empate.
+Valores iguais → empate
 
 4. Estrutura do Menu Interativo
 
-O programa exibe o menu abaixo para o usuário:
+O menu exibido ao usuário é:
 
 ******************** MENU PRINCIPAL **********************
 
 -- Escolha um atributo para comparação entre as cartas: --
-
 __________________________________________________________
+
 1. População (Maior vence)
 2. Área (Maior vence)
 3. PIB (Maior vence)
 4. Pontos Turísticos (Maior vence)
 5. Densidade Demográfica (Menor vence)
+
 Opção:
 
+Fluxo da Lógica
 
-A lógica de controle utiliza:
+switch controla a opção escolhida
 
-switch para tratar a opção escolhida.
+if-else (incluindo aninhados) determina:
 
-if-else (incluindo estruturas aninhadas) para determinar:
+Vencedor
 
-O vencedor,
+Valores exibidos
 
-Os valores a serem exibidos,
-
-Casos de empate.
+Casos de empate
 
 5. Requisitos Funcionais Atendidos
 
-Menu Interativo: Implementado com switch, com opções claras ao usuário.
+Menu interativo claro e implementado com switch
 
-Comparação de Atributos: Lógica por atributo, seguindo regras definidas.
+Comparação por atributo conforme regras definidas
 
-Cálculo de Densidade Demográfica: Realizado automaticamente.
+Cálculo automático da densidade demográfica
 
-Exibição de Resultado: Inclui nome das cartas, valores e vencedor ou empate.
+Exibição completa do resultado da disputa
 
-Utilização de Condicionais: Estruturas if-else e aninhamentos implementados.
+Utilização de condicionais if-else
 
 6. Requisitos Não Funcionais Atendidos
+Usabilidade
 
-Usabilidade:
+Menu simples, direto e amigável
 
-O menu é simples e objetivo, com mensagens explicativas para cada etapa.
+Performance
 
-Performance:
+Resposta imediata, sem dependências externas
 
-Resposta imediata; não depende de entrada externa além da escolha do atributo.
+Manutenibilidade
 
-Manutenibilidade:
+Código comentado, organizado e com variáveis descritivas
 
-Código organizado, comentado e com variáveis nomeadas de forma clara.
+Alteração dos atributos é simples e localizada
 
-A alteração dos valores das cartas é simples, bastando modificar as variáveis no início do arquivo.
+Segurança
 
-Segurança:
-
-Há tratamento de opção inválida via default no switch.
+Opção inválida é tratada com default no switch
 
 7. Compilação do Programa
-
 Usando GCC
 
-No diretório onde o arquivo main.c se encontra:
+No diretório onde o arquivo main.c está localizado:
 
 gcc -o super_trunfo main.c
 
-Isso gerará um executável:
+
+Isso gera o executável:
 
 super_trunfo (Linux/macOS)
 
 super_trunfo.exe (Windows)
 
 8. Execução do Programa
-  
 Linux/macOS
-
 ./super_trunfo
 
 Windows
-
 super_trunfo.exe
 
 9. Exemplo de Uso do Menu
-
 Entrada do usuário:
-
 4
 
 Saída esperada (exemplo genérico):
-
 O atributo escolhido foi: Pontos Turísticos
 
 DISPUTARAM: <Pais 1> versus <Pais 2>
@@ -246,8 +241,7 @@ GANHADOR: Vitória de <Pais vencedor>
 
 11. Como Alterar os Valores das Cartas
 
-Os atributos das duas cartas estão definidos no início do código-fonte.
-Para alterá-los, modifique as variáveis correspondentes:
+Os atributos das duas cartas estão definidos no início do código. Para alterá-los, basta modificar as variáveis:
 
 char nome_pais1[] = "...";
 int populacao1 = ...;
@@ -255,5 +249,8 @@ float area1 = ...;
 float pib1_input = ...;
 int pontos_turisticos1 = ...;
 
-O programa continuará funcionando normalmente, independentemente dos valores escolhidos.
----------------------------------------------------------------------------------------------------------------------------------
+
+O programa continuará funcionando normalmente após qualquer alteração, desde que os tipos e estruturas sejam mantidos.
+
+
+
