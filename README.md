@@ -147,7 +147,7 @@ Opção:
 
 Fluxo da Lógica
 
-1. SWITCH controla a opção escolhida
+1. SWITCH controla a opção escolhida.
 
 2. IF-ELSE (incluindo aninhados) determina:
 
@@ -174,14 +174,18 @@ Vencedor - Valores exibidos - Casos de empate
 #### 7. Compilação do Programa
 ##### Usando GCC
 
-No diretório onde o arquivo main.c está localizado: gcc -o super_trunfo main.c
+No diretório onde o arquivo main.c está localizado     gcc -o super_trunfo main.c
 
-Isso gera o executável: super_trunfo (Linux/macOS) / super_trunfo.exe (Windows)
+Isso gera o executável:     super_trunfo (Linux/macOS)   /   super_trunfo.exe (Windows)
 
 #### 8. Execução do Programa
-##### Linux/macOS:   ./super_trunfo
+##### Linux/macOS:   
 
-##### Windows:   super_trunfo.exe
+./super_trunfo
+
+##### Windows:   
+
+super_trunfo.exe
 
 #### 9. Exemplo de Uso do Menu
 Entrada do usuário:
