@@ -93,11 +93,9 @@ Este projeto implementa uma versão simplificada do jogo Super Trunfo, permitind
 
 O programa utiliza:
 
-Um menu interativo com switch
-
-Lógica de comparação usando condicionais if-else
-
-Regras específicas para cada atributo
+1. Um menu interativo com switch
+2. Lógica de comparação usando condicionais if-else
+3. Regras específicas para cada atributo
 
 O foco deste desafio é aprender lógica condicional, montagem de menus e controle de fluxo.
 
