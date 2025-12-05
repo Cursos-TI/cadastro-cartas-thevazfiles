@@ -82,10 +82,12 @@ Equipe de Ensino - MateCheck
 ---
 
 
-Super Trunfo em C – Comparação de Cartas de Países
-TEMA 3 – Nível Aventureiro
-Documentação do Projeto – Nível Intermediário
-1. Descrição Geral
+# Super Trunfo em C – Comparação de Cartas de Países
+
+
+## TEMA 3 – Nível Aventureiro
+### Documentação do Projeto – Nível Intermediário
+#### 1. Descrição Geral
 
 Este projeto implementa uma versão simplificada do jogo Super Trunfo, permitindo comparar duas cartas de países com base em atributos previamente definidos no código.
 
