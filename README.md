@@ -168,35 +168,21 @@ Vencedor - Valores exibidos - Casos de empate
 2. Menu simples, direto e amigável
 3. Performance
 4. Resposta imediata, sem dependências externas
-5. Manutenibilidade
-
-Código comentado, organizado e com variáveis descritivas
-
-Alteração dos atributos é simples e localizada
-
-6. Segurança
-
-Opção inválida é tratada com default no switch
+5. Manutenibilidade: Código comentado, organizado e com variáveis descritivas e alteração dos atributos é simples e localizada.
+6. Segurança: Opção inválida é tratada com default no switch.
 
 #### 7. Compilação do Programa
-Usando GCC
+##### Usando GCC
 
-No diretório onde o arquivo main.c está localizado:
+No diretório onde o arquivo main.c está localizado: gcc -o super_trunfo main.c
 
-gcc -o super_trunfo main.c
-
-
-Isso gera o executável:
-
-super_trunfo (Linux/macOS)
-
-super_trunfo.exe (Windows)
+Isso gera o executável: super_trunfo (Linux/macOS) / super_trunfo.exe (Windows)
 
 #### 8. Execução do Programa
-Linux/macOS
+##### Linux/macOS
 ./super_trunfo
 
-Windows
+##### Windows
 super_trunfo.exe
 
 #### 9. Exemplo de Uso do Menu
