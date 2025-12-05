@@ -217,12 +217,18 @@ GANHADOR: Vitória de <Pais vencedor>
 
 #### 11. Como Alterar os Valores das Cartas
 
-Os atributos das duas cartas estão definidos no início do código. Para alterá-los, basta modificar as variáveis:
+Os atributos das duas cartas estão definidos no início do código. 
+
+Para alterá-los, basta modificar as variáveis:
 
 char nome_pais1[] = "...";
+
 int populacao1 = ...;
+
 float area1 = ...;
+
 float pib1_input = ...;
+
 int pontos_turisticos1 = ...;
 
 
