@@ -101,7 +101,7 @@ Regras específicas para cada atributo
 
 O foco deste desafio é aprender lógica condicional, montagem de menus e controle de fluxo.
 
-2. Objetivo do Sistema
+#### 2. Objetivo do Sistema
 
 O jogador escolhe um atributo para comparar entre duas cartas. O sistema então exibe:
 
@@ -113,7 +113,7 @@ Os valores utilizados
 
 O resultado da disputa (vitória ou empate)
 
-3. Atributos Disponíveis para Comparação
+#### 3. Atributos Disponíveis para Comparação
 
 Os atributos implementados são:
 
@@ -139,7 +139,7 @@ Densidade Demográfica:
 
 Valores iguais → empate
 
-4. Estrutura do Menu Interativo
+#### 4. Estrutura do Menu Interativo
 
 O menu exibido ao usuário é:
 
@@ -168,7 +168,7 @@ Valores exibidos
 
 Casos de empate
 
-5. Requisitos Funcionais Atendidos
+#### 5. Requisitos Funcionais Atendidos
 
 Menu interativo claro e implementado com switch
 
@@ -180,7 +180,7 @@ Exibição completa do resultado da disputa
 
 Utilização de condicionais if-else
 
-6. Requisitos Não Funcionais Atendidos
+#### 6. Requisitos Não Funcionais Atendidos
 Usabilidade
 
 Menu simples, direto e amigável
@@ -199,7 +199,7 @@ Segurança
 
 Opção inválida é tratada com default no switch
 
-7. Compilação do Programa
+#### 7. Compilação do Programa
 Usando GCC
 
 No diretório onde o arquivo main.c está localizado:
@@ -213,14 +213,14 @@ super_trunfo (Linux/macOS)
 
 super_trunfo.exe (Windows)
 
-8. Execução do Programa
+#### 8. Execução do Programa
 Linux/macOS
 ./super_trunfo
 
 Windows
 super_trunfo.exe
 
-9. Exemplo de Uso do Menu
+#### 9. Exemplo de Uso do Menu
 Entrada do usuário:
 4
 
@@ -236,12 +236,12 @@ GANHADOR: Vitória de <Pais vencedor>
 
 (A saída varia conforme os valores definidos no código.)
 
-10. Estrutura do Projeto
+#### 10. Estrutura do Projeto
 /https://github.com/Cursos-TI/cadastro-cartas-thevazfiles
  ├── main.c
  └── README.md
 
-11. Como Alterar os Valores das Cartas
+#### 11. Como Alterar os Valores das Cartas
 
 Os atributos das duas cartas estão definidos no início do código. Para alterá-los, basta modificar as variáveis:
 
