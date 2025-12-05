@@ -151,9 +151,7 @@ Fluxo da Lógica
 
 2. IF-ELSE (incluindo aninhados) determina:
 
-Vencedor
-Valores exibidos
-Casos de empate
+Vencedor - Valores exibidos - Casos de empate
 
 #### 5. Requisitos Funcionais Atendidos
 
@@ -164,21 +162,19 @@ Casos de empate
 5. Utilização de condicionais if-else
 
 #### 6. Requisitos Não Funcionais Atendidos
-Usabilidade
 
-Menu simples, direto e amigável
 
-Performance
-
-Resposta imediata, sem dependências externas
-
-Manutenibilidade
+1. Usabilidade
+2. Menu simples, direto e amigável
+3. Performance
+4. Resposta imediata, sem dependências externas
+5. Manutenibilidade
 
 Código comentado, organizado e com variáveis descritivas
 
 Alteração dos atributos é simples e localizada
 
-Segurança
+6. Segurança
 
 Opção inválida é tratada com default no switch
 
