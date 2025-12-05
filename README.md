@@ -212,6 +212,7 @@ GANHADOR: Vitória de <Pais vencedor>
 /https://github.com/Cursos-TI/cadastro-cartas-thevazfiles
 
  ├── main.c
+ 
  └── README.md
 
 #### 11. Como Alterar os Valores das Cartas
