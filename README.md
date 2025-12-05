@@ -103,39 +103,31 @@ O foco deste desafio é aprender lógica condicional, montagem de menus e contro
 
 O jogador escolhe um atributo para comparar entre duas cartas. O sistema então exibe:
 
-O atributo selecionado
-
-Os nomes dos países
-
-Os valores utilizados
-
-O resultado da disputa (vitória ou empate)
+1. O atributo selecionado
+2. Os nomes dos países
+3. Os valores utilizados
+4. O resultado da disputa (vitória ou empate)
 
 #### 3. Atributos Disponíveis para Comparação
 
 Os atributos implementados são:
 
-População (int)
-
-Área (float)
-
-PIB (float)
-
-Pontos Turísticos (int)
-
-Densidade Demográfica (float) – calculada internamente
-
-Nome do país (string) – exibido apenas como informação
+1. opulação (int)
+2. Área (float)
+3. PIB (float)
+4. Pontos Turísticos (int)
+5. Densidade Demográfica (float) – calculada internamente
+6. Nome do país (string) – exibido apenas como informação
 
 Regras de Comparação
 
-População, Área, PIB, Pontos Turísticos:
+1. População, Área, PIB, Pontos Turísticos:
 → vence a carta com maior valor
 
-Densidade Demográfica:
+2. Densidade Demográfica:
 → vence a carta com menor valor
 
-Valores iguais → empate
+3. Valores iguais → empate
 
 #### 4. Estrutura do Menu Interativo
 
@@ -144,7 +136,7 @@ O menu exibido ao usuário é:
 ******************** MENU PRINCIPAL **********************
 
 -- Escolha um atributo para comparação entre as cartas: --
-__________________________________________________________
+"_________________________________________________________"
 
 1. População (Maior vence)
 2. Área (Maior vence)
@@ -156,27 +148,21 @@ Opção:
 
 Fluxo da Lógica
 
-switch controla a opção escolhida
+1. SWITCH controla a opção escolhida
 
-if-else (incluindo aninhados) determina:
+2. IF-ELSE (incluindo aninhados) determina:
 
-Vencedor
-
-Valores exibidos
-
-Casos de empate
+a - Vencedor
+b - Valores exibidos
+c - Casos de empate
 
 #### 5. Requisitos Funcionais Atendidos
 
-Menu interativo claro e implementado com switch
-
-Comparação por atributo conforme regras definidas
-
-Cálculo automático da densidade demográfica
-
-Exibição completa do resultado da disputa
-
-Utilização de condicionais if-else
+1. Menu interativo claro e implementado com switch
+2. Comparação por atributo conforme regras definidas
+3. Cálculo automático da densidade demográfica
+4. Exibição completa do resultado da disputa
+5. Utilização de condicionais if-else
 
 #### 6. Requisitos Não Funcionais Atendidos
 Usabilidade
