@@ -81,8 +81,9 @@ Equipe de Ensino - MateCheck
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
-#### Super Trunfo em C – Comparação de Cartas de Países
-### TEMA 3 Nível Aventureiro 
+### Super Trunfo em C – Comparação de Cartas de Países
+
+# TEMA 3 Nível Aventureiro 
 
 ## Documentação do Projeto – Nível Intermediário
 
@@ -96,36 +97,38 @@ O foco deste desafio é o desenvolvimento da lógica de comparação, da estrutu
 
 O programa permite ao jogador escolher qual atributo deseja utilizar para comparar duas cartas previamente cadastradas. Após a escolha, o sistema exibe:
 
-a. O atributo selecionado.
-b. Os nomes dos países.
-c. Os valores envolvidos.
-d. O resultado da disputa (qual carta venceu ou se houve empate).
+O atributo selecionado.
+Os nomes dos países.
+Os valores envolvidos.
+O resultado da disputa (qual carta venceu ou se houve empate).
 
 # 3. Atributos Disponíveis para Comparação
 
 Os atributos implementados são:
 
-- População (int)
-- Área (float)
-- PIB (float)
-- Pontos Turísticos (int)
-- Densidade Demográfica (float) – calculada internamente
-- Nome do país – exibido somente como informação, não é utilizado para desempate
+População (int)
+Área (float)
+PIB (float)
+Pontos Turísticos (int)
+Densidade Demográfica (float) – calculada internamente
+Nome do país – exibido somente como informação, não é utilizado para desempate
 
 Regras de Comparação
 
-1 - Para População, Área, PIB e Pontos Turísticos:
+Para População, Área, PIB e Pontos Turísticos:
 vence a carta com o maior valor.
-2 - Para Densidade Demográfica:
+
+Para Densidade Demográfica:
 vence a carta com o menor valor.
-3 - Em qualquer atributo:
+
+Em qualquer atributo:
 valores iguais resultam em empate.
 
 # 4. Estrutura do Menu Interativo
 
 O programa exibe o menu abaixo para o usuário:
 
-[ ******************** MENU PRINCIPAL ********************** ]
+******************** MENU PRINCIPAL **********************
 -- Escolha um atributo para comparação entre as cartas: --
 __________________________________________________________
 1. População (Maior vence)
@@ -138,31 +141,31 @@ Opção:
 
 A lógica de controle utiliza:
 
-a - switch para tratar a opção escolhida.
-b - if-else (incluindo estruturas aninhadas) para determinar:
+switch para tratar a opção escolhida.
+if-else (incluindo estruturas aninhadas) para determinar:
 
-- O vencedor,
-- Os valores a serem exibidos,
-- Casos de empate.
+O vencedor,
+Os valores a serem exibidos,
+Casos de empate.
 
 # 5. Requisitos Funcionais Atendidos
 
-1 - Menu Interativo: Implementado com switch, com opções claras ao usuário.
-2 - Comparação de Atributos: Lógica por atributo, seguindo regras definidas.
-3 - Cálculo de Densidade Demográfica: Realizado automaticamente.
-4 - Exibição de Resultado: Inclui nome das cartas, valores e vencedor ou empate.
-5 - Utilização de Condicionais: Estruturas if-else e aninhamentos implementados.
+Menu Interativo: Implementado com switch, com opções claras ao usuário.
+Comparação de Atributos: Lógica por atributo, seguindo regras definidas.
+Cálculo de Densidade Demográfica: Realizado automaticamente.
+Exibição de Resultado: Inclui nome das cartas, valores e vencedor ou empate.
+Utilização de Condicionais: Estruturas if-else e aninhamentos implementados.
 
 # 6. Requisitos Não Funcionais Atendidos
 
-1 - Usabilidade:
+Usabilidade:
 O menu é simples e objetivo, com mensagens explicativas para cada etapa.
-2 - Performance:
+Performance:
 Resposta imediata; não depende de entrada externa além da escolha do atributo.
-3 - Manutenibilidade:
+Manutenibilidade:
 Código organizado, comentado e com variáveis nomeadas de forma clara.
 A alteração dos valores das cartas é simples, bastando modificar as variáveis no início do arquivo.
-4 - Segurança:
+Segurança:
 Há tratamento de opção inválida via default no switch.
 
 # 7. Compilação do Programa
@@ -172,20 +175,21 @@ No diretório onde o arquivo main.c se encontra:
 gcc -o super_trunfo main.c
 
 Isso gerará um executável:
-- super_trunfo (Linux/macOS)
-- super_trunfo.exe (Windows)
+super_trunfo (Linux/macOS)
+super_trunfo.exe (Windows)
 
 # 8. Execução do Programa
-a - Linux/macOS
+Linux/macOS
 ./super_trunfo
 
-b - Windows
+Windows
 super_trunfo.exe
 
 # 9. Exemplo de Uso do Menu
-1 - Entrada do usuário:
+Entrada do usuário:
 4
-2 - Saída esperada (exemplo genérico):
+
+Saída esperada (exemplo genérico):
 O atributo escolhido foi: Pontos Turísticos
 
 DISPUTARAM: <Pais 1> versus <Pais 2>
