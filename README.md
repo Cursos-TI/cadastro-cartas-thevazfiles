@@ -81,19 +81,19 @@ Equipe de Ensino - MateCheck
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
-### Super Trunfo em C – Comparação de Cartas de Países
+Super Trunfo em C – Comparação de Cartas de Países
 
-# TEMA 3 Nível Aventureiro 
+TEMA 3 Nível Aventureiro 
 
-## Documentação do Projeto – Nível Intermediário
+Documentação do Projeto – Nível Intermediário
 
-# 1. Descrição Geral
+1. Descrição Geral
 
 Este projeto implementa uma versão simplificada do jogo Super Trunfo, permitindo comparar duas cartas de países com base em atributos definidos no próprio código. O programa utiliza um menu interativo baseado na estrutura switch e lógica de decisão com condicionais if-else para determinar o vencedor em cada comparação.
 
 O foco deste desafio é o desenvolvimento da lógica de comparação, da estrutura do menu e do fluxo interativo, conforme orientado no módulo.
 
-# 2. Objetivo do Sistema
+2. Objetivo do Sistema
 
 O programa permite ao jogador escolher qual atributo deseja utilizar para comparar duas cartas previamente cadastradas. Após a escolha, o sistema exibe:
 
@@ -102,7 +102,7 @@ Os nomes dos países.
 Os valores envolvidos.
 O resultado da disputa (qual carta venceu ou se houve empate).
 
-# 3. Atributos Disponíveis para Comparação
+3. Atributos Disponíveis para Comparação
 
 Os atributos implementados são:
 
@@ -124,7 +124,7 @@ vence a carta com o menor valor.
 Em qualquer atributo:
 valores iguais resultam em empate.
 
-# 4. Estrutura do Menu Interativo
+4. Estrutura do Menu Interativo
 
 O programa exibe o menu abaixo para o usuário:
 
@@ -148,44 +148,56 @@ O vencedor,
 Os valores a serem exibidos,
 Casos de empate.
 
-# 5. Requisitos Funcionais Atendidos
+5. Requisitos Funcionais Atendidos
 
 Menu Interativo: Implementado com switch, com opções claras ao usuário.
+
 Comparação de Atributos: Lógica por atributo, seguindo regras definidas.
+
 Cálculo de Densidade Demográfica: Realizado automaticamente.
+
 Exibição de Resultado: Inclui nome das cartas, valores e vencedor ou empate.
+
 Utilização de Condicionais: Estruturas if-else e aninhamentos implementados.
 
-# 6. Requisitos Não Funcionais Atendidos
+6. Requisitos Não Funcionais Atendidos
 
 Usabilidade:
 O menu é simples e objetivo, com mensagens explicativas para cada etapa.
+
 Performance:
 Resposta imediata; não depende de entrada externa além da escolha do atributo.
+
 Manutenibilidade:
 Código organizado, comentado e com variáveis nomeadas de forma clara.
+
 A alteração dos valores das cartas é simples, bastando modificar as variáveis no início do arquivo.
+
 Segurança:
 Há tratamento de opção inválida via default no switch.
 
-# 7. Compilação do Programa
+7. Compilação do Programa
 Usando GCC
 
 No diretório onde o arquivo main.c se encontra:
 gcc -o super_trunfo main.c
 
 Isso gerará um executável:
+
 super_trunfo (Linux/macOS)
+
 super_trunfo.exe (Windows)
 
-# 8. Execução do Programa
+8. Execução do Programa
+  
 Linux/macOS
 ./super_trunfo
 
 Windows
 super_trunfo.exe
 
-# 9. Exemplo de Uso do Menu
+9. Exemplo de Uso do Menu
+
 Entrada do usuário:
 4
 
@@ -201,12 +213,12 @@ GANHADOR: Vitória de <Pais vencedor>
 
 (A saída varia conforme os valores definidos no código.)
 
-# 10. Estrutura do Projeto
+10. Estrutura do Projeto
 /https://github.com/Cursos-TI/cadastro-cartas-thevazfiles
  ├── main.c
  └── README.md
 
-# 11. Como Alterar os Valores das Cartas
+11. Como Alterar os Valores das Cartas
 
 Os atributos das duas cartas estão definidos no início do código-fonte.
 Para alterá-los, modifique as variáveis correspondentes:
