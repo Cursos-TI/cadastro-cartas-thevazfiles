@@ -136,7 +136,6 @@ O menu exibido ao usuário é:
 ******************** MENU PRINCIPAL **********************
 
 -- Escolha um atributo para comparação entre as cartas: --
-"_________________________________________________________"
 
 1. População (Maior vence)
 2. Área (Maior vence)
@@ -152,9 +151,9 @@ Fluxo da Lógica
 
 2. IF-ELSE (incluindo aninhados) determina:
 
-a - Vencedor
-b - Valores exibidos
-c - Casos de empate
+Vencedor
+Valores exibidos
+Casos de empate
 
 #### 5. Requisitos Funcionais Atendidos
 
