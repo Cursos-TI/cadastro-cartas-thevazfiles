@@ -298,7 +298,7 @@ int main()
     printf("%s (Soma Total): %.2f\n", nome_cidade1, soma_c1);
     printf("%s (Soma Total): %.2f\n\n", nome_cidade2, soma_c2);
     
-    // Lógica para determinar o Vencedor Final
+    // Lógica para determinar o Vencedor Final -
     if (vitorias_c1 > vitorias_c2) {
         printf("-> VENCEDOR: %s!\n", nome_cidade1);
     } else if (vitorias_c2 > vitorias_c1) {
